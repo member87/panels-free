@@ -13,11 +13,11 @@ export default function SingleImage({ data, artists }: { data: any, artists: any
 
   if (!artist) return;
 
-  return <div className="rounded bg-zinc-900/50 shadow">
+  return <div className="rounded bg-zinc-900/50 shadow grid grid-rows-[500px,1fr]">
     <img src={imageUrl}
       alt={keyToUse}
       key={keyToUse}
-      className="rounded-lg shadow-lg"
+      className="rounded-lg shadow-lg h-full w-full object-cover"
     />
     <div className="px-2 pb-4 text-center">
       <a href={imageUrl} target="_blank" className="block my-4 bg-white rounded text-black py-2 font-bold">
